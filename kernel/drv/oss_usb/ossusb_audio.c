@@ -61,6 +61,9 @@ static int
 write_control_value (ossusb_devc * devc, udi_endpoint_handle_t * endpoint,
 		     int ctl, int l, unsigned int v)
 {
+  return 1;
+/* http://www.4front-tech.com/oss-forum/viewtopic.php?f=3&t=3423&start=0 */
+/*
   unsigned char buf[4];
   int len;
 
@@ -93,6 +96,7 @@ write_control_value (ossusb_devc * devc, udi_endpoint_handle_t * endpoint,
     }
 
   return len;
+*/
 }
 
 static void
