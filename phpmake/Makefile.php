@@ -9,7 +9,7 @@
 CC=cc -ffreestanding
 HOSTCC=cc
 CPLUSPLUS=g++ -fno-rtti -fno-exceptions -I.
-OSFLAGS=-fno-common -fno-stack-protector -Wall -Werror -DOSS_LITTLE_ENDIAN
+OSFLAGS=-fno-common -fno-stack-protector -Wall -DOSS_LITTLE_ENDIAN
 OS=Linux
 ARCH=x86_64
 TOPDIR=.
